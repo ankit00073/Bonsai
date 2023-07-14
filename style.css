@@ -1,0 +1,430 @@
+/*----- header----- */
+/* Remove blue color and underline from links */
+*{
+    text-decoration: none;
+    color: #65816d;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 10px 7px;
+    font-weight: 10%;
+    font-size: 110%;
+    letter-spacing: .25px;
+    display: block;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+hr {
+    color: gray;
+    border: none;
+    height: 1px;
+    background: rgb(219, 219, 219);
+    margin: -5px 250px;
+    width: 69%;
+    clear: both;
+}
+
+nav ul li a button {
+    margin-left: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+nav ul .login {
+    margin: 8px 15px 10px 440px;
+    font-weight: bold;
+}
+
+.StartFree {
+    border-radius: 40px;
+    background-color: #22ad01;
+    padding: 10px 20px 12px;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+nav ul .product {
+    margin-left: 30px;
+}
+
+nav ul li .logo {
+    margin-left: 200px;
+}
+
+div .secondary {
+    float: left;
+    list-style: none;
+    margin-left: -8%;
+    overflow: auto;
+    margin-top: 2px;
+}
+
+.content-heading-1{
+    margin-bottom: 5%;
+    line-height: 110%;
+    max-width: 300px;
+    min-width: 100px;
+    color:#003c2f;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:300%;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content-heading{
+    max-width: 500px;
+    min-width: 100px;
+    color:#003c2f;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:300%;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.toggle-container {
+    display: inline-block;
+  }
+  
+/* --- toggle --- */
+.toggle {
+    margin-left: 45%;
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .toggle-label {
+    display: inline-block;
+    position: relative;
+    width: 210px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: #e6e5e5;
+    cursor: pointer;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 55px;
+    height: 26px;
+    border-radius: 12px;
+    background-color: #003c2f;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .toggle-input:checked + .toggle-label .toggle-button {
+    transform: translateX(50px);
+  }
+  
+  .toggle-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 8px;
+    font-size: 12px;
+    color: black; /* Set initial text color to black */
+  }
+  
+  .circle-box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #003c2f;
+    text-align: center;
+  }
+  
+  .circle-box .toggle-value {
+    color: black; /* Set initial text color to black */
+    line-height: 100px;
+  }
+  
+  .toggle-input:checked + .toggle-label .toggle-value:last-child {
+    opacity: 1;
+    color: white; /* Change text color to white after toggle */
+  }
+  
+  .toggle-input:checked + .toggle-label .toggle-value:first-child {
+    opacity: 1;
+    color: black; /* Set text color back to black after toggle */
+  }
+  
+  .toggle-input:checked + .toggle-label .toggle-value:nth-child(2) {
+    opacity: 1;
+    color: white; /* Change text color to white after toggle */
+  }
+  
+  .toggle-input:checked + .toggle-label .circle-box .toggle-value {
+    color: white; /* Set text color inside the circle box to white after toggle */
+  }
+  
+
+  /* FAQ section */
+
+.faq-heading{
+    margin-bottom: 5%;
+    line-height: 110%;
+    max-width: 700px;
+    min-width: 100px;
+    color:#003c2f;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:300%;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.faq{
+    display: flex;
+    justify-content: center;
+    max-width: 400%;
+}
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    margin-left: 20px;
+}
+
+summary::-webkit-details-marker {
+    content: "\25BE";
+    color: black;
+}
+
+.faq-container hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+
+  .hr-line {
+    width: 30%;
+    margin: auto;
+
+  }
+
+  
+th a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    width: 80%;
+}
+table thead th{
+    font-weight: bolder;
+    color: black;
+}
+
+div img{
+    margin-left: 23%;
+    margin-bottom: 5%;
+}
+
+/* Style for the container div */
+.circle-container {
+    display: flex;
+    margin-left: 250px;
+    margin-top: 40px;
+
+}
+
+/* Style for green circles */
+.green-circle {
+    background-color: green;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for icon color */
+.icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-text {
+    color: #65816d;
+    display: block;
+    opacity: .5;
+    box-sizing: border-box; 
+    max-width: 1350px;
+    margin-left: 250px;
+}
+
+
+
+
+th{
+    width: fit-content;
+    padding-left: 18%;
+}
+
+div tbody tr td{
+    padding-left: 18%;
+}
+
+
+.box-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 100px auto;
+  }
+  
+  .box {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid #65816d;
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .box h2{
+    color: black;
+    font-family:Arial, Helvetica, sans-serif
+  }
+  
+  .price {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 100px;
+    margin-right: 8px;
+    color: black;
+    font-size: 200%;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .price span {
+    color: grey; /* Change the color to grey for /month */
+    font-size: 20px; /* Set the desired font size */
+  }
+  
+  .row-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  
+  .box-flex-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  
+  .vl {
+    border-left: 1px solid #a9b1ab;
+    height: 50px;
+    margin: 0;
+    margin-left: 13%;
+  }
+
+  .tags{
+    margin: 5% 90% 5% 0%;
+  }
+  
+  .help{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+
+  .talk img{
+    width: 542px;
+    height: 481px;
+  }
+  
+  .quick-setup h1{
+    color: black;
+    max-width: 40%;
+  }
+
+  .quick-setup p{
+    max-width: 50%;
+  }
+
+  .quick-setup hr{
+    margin:20px 0;
+}
+  .quick-setup button{
+    border-radius: 40px;
+    background-color: #22ad01;
+    padding: 10px 20px 12px;
+    border: none;
+    color: white;
+  }
+
+  .get-started {
+    background-color: #003c2f;
+    width: 1264px;
+    height: 176px;
+    border: 1px solid green;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 60px 0px 100px 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+.flex-container h1{
+    color: white;
+    max-width: 70%;
+    font-weight: lighter;
+    font-size: 290%;
+}
+
+.flex-item button{
+    border-radius: 30px;
+    padding: 15px;
+    width: 140%;
+    font-size: large;
+    border: none;
+    background-color: #22ad01;
+    color: white;
+}
+.bonsai{
+    margin-left: 53%;
+}
+.table-list{
+    margin-bottom: 5%;
+}
